@@ -77,20 +77,20 @@ public class WxController implements Initializable
             else
             {
                 lblLocation.setText("Invalid Zipcode");
-                lblObsTime.setText("");
-                lblWeather.setText("");
-                lblTempF.setText("");
-                lblWind.setText("");
-                lblPressure.setText("");
-                lblVisibility.setText("");
+                lblObsTime.setText("N/A");
+                lblWeather.setText("N/A");
+                lblTempF.setText("N/A");
+                lblWind.setText("N/A");
+                lblPressure.setText("N/A");
+                lblVisibility.setText("N/A");
                 iconwx.setImage(new Image("badzipcode.png"));
             }
         }
     }
-    
+    /*
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-    }
+    }*/
    
 }//end class

@@ -64,14 +64,23 @@ public class WxModel{
     
     public boolean isValid()
     {
-        try
+        /*try
         {
-            jse.getAsJsonObject().get("response").getAsJsonObject().has("error");
+            string error = jse.getAsJsonObject().get("response").getAsJsonObject().get("error").getAsJsonObject().get("description").getAsString();
             return false;
         }
         catch (java.lang.NullPointerException npe)
         {
             //zip code was valid because there was no error
+            return true;
+        }*/
+        
+        if ( jse.getAsJsonObject().get("response").getAsJsonObject().has("error") )
+        {
+            return false;
+        }
+        else
+        {
             return true;
         }
     }
