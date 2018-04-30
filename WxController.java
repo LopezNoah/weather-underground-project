@@ -87,10 +87,10 @@ public class WxController implements Initializable
             }
         }
     }
-    /*
+    
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-    }*/
+    }
    
 }//end class
