@@ -31,25 +31,25 @@ public class WxController implements Initializable
     private Button btnGo;
     
     @FXML
-    private label lblLocation;
+    private Label lblLocation;
     
     @FXML
-    private label lblTempF;
+    private Label lblTempF;
     
     @FXML
-    private label lblObsTime;
+    private Label lblObsTime;
     
     @FXML
-    private label lblPressure;
+    private Label lblPressure;
     
     @FXML
-    private label lblWind;
+    private Label lblWind;
     
     @FXML
-    private label lblVisibility;
+    private Label lblVisibility;
     
     @FXML
-    private label lblWeather;
+    private Label lblWeather;
     
     @FXML
     private ImageView iconwx;
@@ -72,7 +72,7 @@ public class WxController implements Initializable
                 lblWind.setText(weather.getWindStr());
                 lblPressure.setText(weather.getPressure());
                 lblVisibility.setText(weather.getVisibility());
-                iconwx.setImage(weather.getImage());
+                iconwx.setImage(weather.getIcon());
             }
             else
             {
@@ -82,8 +82,8 @@ public class WxController implements Initializable
                 lblTempF.setText("");
                 lblWind.setText("");
                 lblPressure.setText("");
-                lblVisbility.setText("");
-                iconwx.setImage(new Image("badzipcode.png");
+                lblVisibility.setText("");
+                iconwx.setImage(new Image("badzipcode.png"));
             }
         }
     }

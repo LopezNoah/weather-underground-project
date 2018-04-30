@@ -32,7 +32,7 @@ public class WxModel{
             URL wuURL = new URL("http://api.wunderground.com/api/"
                     + apiKey
                     + "/conditions/q/"
-                    + zipCode
+                    + zipcode
                     + ".json");
             //http://api.wunderground.com/api/ebfc9191d14c892b/conditions/q/zipCode.json
             //http://api.wunderground.com/api/Your_Key/geolookup/q/94107.json
@@ -66,7 +66,7 @@ public class WxModel{
     {
         try
         {
-            jse.getAsJsonObject().get("response").getAsJsonObject().has("error")
+            jse.getAsJsonObject().get("response").getAsJsonObject().has("error");
             return false;
         }
         catch (java.lang.NullPointerException npe)
@@ -94,7 +94,7 @@ public class WxModel{
     public String getObservedTime()
     {
         return jse.getAsJsonObject().get("current_observation")
-                                .getAsJsonObject().get("observation_time").getAString();
+                                .getAsJsonObject().get("observation_time").getAsString();
     }
     
     public String getWeather()
@@ -106,7 +106,7 @@ public class WxModel{
     public double getTempF()
     {
         return jse.getAsJsonObject().get("current_observation")
-                            .getAsJsonObject().get("temp_f");
+                            .getAsJsonObject().get("temp_f").getAsDouble();
     }
     
     public String getWindStr()
@@ -118,7 +118,7 @@ public class WxModel{
     public String getPressure()
     {
         return jse.getAsJsonObject().get("current_observation")
-                            .getAsJsonObject.get("pressure_in").getAsString();
+                            .getAsJsonObject().get("pressure_in").getAsString();
     }
     
     public String getVisibility()

@@ -23,8 +23,8 @@ public class WxMain extends Application{
     public void start(Stage stage) throws Exception
     {
         //Parent root = FXMLLoader.load(getClass().getResource("./WxView.fxml"));
-        //AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource("WxView.fxml"));
-        AnchorPane root = (AnchorPane) FXMLLoader.load(WxMain.class.getResource("./WxView.fxml"));
+        AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource("./WxView.fxml"));
+        //AnchorPane root = (AnchorPane) FXMLLoader.load(WxMain.class.getResource("./WxView.fxml"));
         Scene scene = new Scene(root);
         
         stage.setScene(scene);

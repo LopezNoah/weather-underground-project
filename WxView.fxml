@@ -26,17 +26,24 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField fx:id="txtZipcode" text="Enter a zip code" />
-            <Button fx:id="btnGo" mnemonicParsing="false" text="Weather" GridPane.columnIndex="1" />
-            <Label fx:id="lblWeather" prefWidth="100.0" text="Weather" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-            <Label fx:id="lblObsTime" prefWidth="100.0" text="Observed Time" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-            <Label fx:id="lblTempF" prefWidth="100.0" text="Temperature(F)" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Label fx:id="lblPressure" prefWidth="100.0" text="Pressure" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Label fx:id="lblWind" prefWidth="100.0" text="Wind" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-            <Label fx:id="lblVisibility" prefWidth="100.0" text="Visibility" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label prefWidth="75.0" text="City, State :" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+            <Label fx:id="lblLocation" prefHeight="17.0" prefWidth="150.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label prefWidth="100.0" text="Weather" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+            <Label fx:id="lblWeather" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label prefWidth="100.0" text="Observed Time" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+            <Label fx:id="lblObsTime" prefWidth="100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label prefWidth="100.0" text="Temperature(F)" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+            <Label fx:id="lblTempF" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label prefWidth="100.0" text="Pressure" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+            <Label fx:id="lblPressure" prefWidth="100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="lblWind" prefWidth="100.0" text="Wind" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+            <Label prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label prefWidth="100.0" text="Visibility" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+            <Label fx:id="lblVisibility" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
             <ImageView fx:id="iconwx" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-            <Label fx:id="lblLocation" prefWidth="100.0" text="City, State" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="btnGo" mnemonicParsing="false" text="GO" GridPane.columnIndex="1" />
          </children>
       </GridPane>
+      <TextField fx:id="txtZipcode" promptText="Enter a zipcode" />
    </children>
 </AnchorPane>
